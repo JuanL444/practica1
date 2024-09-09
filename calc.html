@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICA 1 - CALCULADORA BASICA</title>
+    
+</head>
+<body>
+    <h1>PRACTICA 1 - CALCULADORA BASICA</h1>
+    <form onsubmit="event.preventDefault(); calcular();">
+        <label for="num1">Num1:</label>
+        <input type="text" id="num1" name="num1"><br><br>
+        
+        <label for="num2">Num2:</label>
+        <input type="text" id="num2" name="num2"><br><br>
+        
+        <label for="operacion">Selecciona una opción:</label>
+        <select id="operacion" name="operacion">
+            <option value="sumar">Sumar</option>
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select><br><br>
+        
+        <button type="submit">Ejecutar</button>
+    </form>
+    <br>
+    <label for="resultado">Resultado:</label>
+    <span id="resultado"></span>
+    <script src="scrip.js"></script>
+
+</body>
+</html>
